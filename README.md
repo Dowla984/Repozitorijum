@@ -1,1 +1,1 @@
-# javni
+#  Moj prvi repozitorijum
