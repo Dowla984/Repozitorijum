@@ -1,49 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mihajlo Idvorski Pupin</title>
-<style type="text/css">
-body {
-    width: 960px;
-    font-family: serif;
-    margin: 20px auto;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>thumb</title>
+<style>
+.container {
+max-width: 960px;
+width: 90%;
+margin: 0 auto;
 }
+.row {
+display: flex;
+flex-flow: row wrap;
+justify-content: flex-start;
+}
+.column {
+flex-basis: 20%;
+box-sizing: border-box;
+padding: 16px;
+}
+.box {
+display: grid;
+grid-template-columns: auto;
+width: 120px;
+height: 100px;
+border-radius:5%;
 
-section {
-    display: inline-block;
-    width: 200px;
-    vertical-align: top;
-    padding-right: 6px;
-    
+
+background-image: url("placeholder-image.png");
+background-size: contain;
+background-repeat: no-repeat;
+background-color: rgb(100, 176, 206);
+
 }
-aside {
-    display: inline-block;
-    width: 730px;
-    vertical-align: top;
-    padding-left: 8px;
-    border-left: 2px solid black;
+.tile-text {
+    margin: 0 20px;
+}
+@media screen and (max-width: 1024px) {
+.column {
+flex-basis: 33.33%;
+}
+}
+@media screen and (max-width: 768px) {
+.column {
+flex-basis: 50%;
+}
+}
+@media screen and (max-width: 414px) {
+.column {
+flex-basis: 100%;
+}
 }
 </style>
 
+
 </head>
 <body>
-<section>
-    <nav>
-    <ul>
-    <li><a href="index.html">Main page</a></li>
-    <li><a href="early-life-and-education.html">early-life-and-education</a></li>
-    <li><a href="literary work.html">literary-work</a></li>
-    <li><a href="pupin coils.html">pupin-coils</a></li>
-</ul>
-</nav>
-</section><aside>
+    
+    <div class="container">
+        <h1>Gallery Heading</h1>
+        <div class="row">
+        <div class="column">
+        <div class="box"></div>
+        <div class="tile-text">Image Title</div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <div class="tile-text">Image Title</div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <div class="tile-text">Image Title</div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <div class="tile-text">Image Title</div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <div class="tile-text">Image Title</div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <div class="tile-text">Image Title</div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <div class="tile-text">Image Title</div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <div class="tile-text">Image Title</div>
+        </div>
+        <div class="column">
+        <div class="box"></div>
+        <div class="tile-text">Image Title</div>
+         </div>
+        <div class="column">
+        <div class="box"></div>
+        <div class="tile-text">Image Title</div>
+        </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 
-<h1>Mihailo Idvorski Pupin</h1>
-<img src="pupin.jpg" alt="pupin">
-<p>Mihajlo Idvorski Pupin, Ph.D., LL.D. (Serbian Cyrillic: Михајло Идворски Пупин; 9 October 1858 – 12 March 1935), also known as Michael I. Pupin, was a Serbian American physicist and physical chemist.</p>
-<p>Pupin is best known for his numerous patents, including a means of greatly extending the range of long-distance telephone communication by placing loading coils (of wire) at predetermined intervals along the transmitting wire (known as "pupinization").</p>
-<p>Pupin was a founding member of National Advisory Committee for Aeronautics (NACA) on March 3, 1915, which later became NASA.</p>
-</aside>
+        </div>
 </body>
 </html>
